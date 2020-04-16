@@ -1,0 +1,20 @@
+<div>
+   <span class= 'fa-star'
+   [ngClass]="{
+      'fas': isFavorite,
+      'far': !isFavorite 
+   }"
+   (click)= 'onClick()'>
+   </span>
+</div>
+<div>
+   <button [ngStyle]="{
+      'backgroundColor': canSave ? 'blue' : 'gray',
+      'color' : canSave ? 'white' : 'black',
+      'font-weight': canSave ? 'bold' : 'normal'
+   }">Save
+   </button>
+</div>
+
+
+
